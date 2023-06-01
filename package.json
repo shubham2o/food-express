@@ -1,0 +1,28 @@
+{
+  "name": "food-express",
+  "version": "1.0.0",
+  "description": "This is food express, a food delivery web app.",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubham2o/food-express.git"
+  },
+  "author": "Shubham Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubham2o/food-express/issues"
+  },
+  "homepage": "https://github.com/shubham2o/food-express#readme",
+  "devDependencies": {
+    "parcel": "^2.9.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
