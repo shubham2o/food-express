@@ -1,6 +1,1103 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = ReactDOM.createRoot(document.getElementById("parent"));
-const child = <h1>Linked.</h1>;
-parent.render(child);
+const Title = () => {
+  return (
+    <a href="/" className="logo-container">
+      <img
+        className="logo"
+        src="https://dcassetcdn.com/design_img/1889677/444768/444768_10393234_1889677_85203911_image.png"
+        alt="Food Express Logo"
+      />
+    </a>
+  );
+}
+
+const Header = () => {
+  return (
+    <div className="header">
+      <Title/>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+const restaurantsList = [
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "92636",
+      name: "Burger King",
+      uuid: "e96b05c4-b0d0-4115-b7f2-b1593bde8d9d",
+      city: "4",
+      area: "Swasthya Vihar",
+      totalRatingsString: "10000+ ratings",
+      cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+      cuisines: ["Burgers", "American"],
+      tags: [],
+      costForTwo: 35000,
+      costForTwoString: "₹350 FOR TWO",
+      deliveryTime: 25,
+      minDeliveryTime: 25,
+      maxDeliveryTime: 25,
+      slaString: "25 MINS",
+      lastMileTravel: 3,
+      slugs: {
+        restaurant: "burger-king-laxmi-nagar-laxmi-nagar",
+        city: "delhi",
+      },
+      cityState: "4",
+      address:
+        "Burger King, Unit No G-46 A,B&C, Ground Floor, V3S Mall, Plot No-10, Laxmi Nagar, Distric centre Delhi-110092",
+      locality: "V3S Mall",
+      parentId: 166,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 4600,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 4600,
+        message: "",
+        title: "Delivery Charge",
+        amount: "4600",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "cid=6954099~p=1~eid=00000188-72ef-3ceb-0364-dbc600b80139",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "3 kms",
+      hasSurge: false,
+      aggregatedDiscountInfoV3: {
+        header: "60% OFF",
+        subHeader: "UPTO ₹120",
+        discountTag: "",
+        headerTypeV2: 0,
+      },
+      sla: {
+        restaurantId: "92636",
+        deliveryTime: 25,
+        minDeliveryTime: 25,
+        maxDeliveryTime: 25,
+        lastMileTravel: 3,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "4.2",
+      totalRatings: 10000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "54977",
+      name: "Jeet Restaurant",
+      uuid: "64f72eac-9bd4-4559-8cd0-7a95bc83b28b",
+      city: "4",
+      area: "Chander Nagar",
+      totalRatingsString: "10000+ ratings",
+      cloudinaryImageId: "o7xqmbsblqkr0v51sgwu",
+      cuisines: ["North Indian", "Chinese"],
+      tags: [],
+      costForTwo: 35000,
+      costForTwoString: "₹350 FOR TWO",
+      deliveryTime: 21,
+      minDeliveryTime: 21,
+      maxDeliveryTime: 21,
+      slaString: "21 MINS",
+      lastMileTravel: 0.4000000059604645,
+      slugs: {
+        restaurant: "jeet-restaurant-chander-nagar-laxmi-nagar",
+        city: "delhi",
+      },
+      cityState: "4",
+      address: "81, Main Road, Chander Nagar New Delhi",
+      locality: "Satnam Park",
+      parentId: 11570,
+      unserviceable: false,
+      veg: true,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 3800,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 3800,
+        message: "",
+        title: "Delivery Charge",
+        amount: "3800",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "0.4 kms",
+      hasSurge: false,
+      aggregatedDiscountInfoV3: {
+        header: "20% OFF",
+        subHeader: "UPTO ₹50",
+        discountTag: "",
+        headerTypeV2: 0,
+      },
+      sla: {
+        restaurantId: "54977",
+        deliveryTime: 21,
+        minDeliveryTime: 21,
+        maxDeliveryTime: 21,
+        lastMileTravel: 0.4000000059604645,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "3.8",
+      totalRatings: 10000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "599032",
+      name: "Danish Kabab",
+      uuid: "da1e7c54-dafd-4b7f-bb1f-e15b163da268",
+      city: "4",
+      area: "Geeta Colony",
+      totalRatingsString: "500+ ratings",
+      cloudinaryImageId: "f1iyvzknuprskdajqtwf",
+      cuisines: ["Indian"],
+      tags: [],
+      costForTwo: 20000,
+      costForTwoString: "₹200 FOR TWO",
+      deliveryTime: 21,
+      minDeliveryTime: 21,
+      maxDeliveryTime: 21,
+      slaString: "21 MINS",
+      lastMileTravel: 1,
+      slugs: {
+        restaurant: "danish-kabab-laxmi-nagar-laxmi-nagar",
+        city: "delhi",
+      },
+      cityState: "4",
+      address:
+        "264, ground floor khureji khas near badi masjid shakar pur khas gandhi nagar east delhi-110051",
+      locality: "Gandhi Nagar",
+      parentId: 357853,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 3800,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 3800,
+        message: "",
+        title: "Delivery Charge",
+        amount: "3800",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "1 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "599032",
+        deliveryTime: 21,
+        minDeliveryTime: 21,
+        maxDeliveryTime: 21,
+        lastMileTravel: 1,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "4.2",
+      totalRatings: 500,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "279898",
+      name: "Chai Point",
+      uuid: "2c0e7d14-9349-4f8c-ab97-877eba06a993",
+      city: "24",
+      area: "Vaishali",
+      totalRatingsString: "1000+ ratings",
+      cloudinaryImageId: "gvaqpk0sw91wvose44lg",
+      cuisines: [
+        "Bakery",
+        "Beverages",
+        "Maharashtrian",
+        "Snacks",
+        "Street Food",
+        "South Indian",
+        "Punjabi",
+      ],
+      tags: [],
+      costForTwo: 15000,
+      costForTwoString: "₹150 FOR TWO",
+      deliveryTime: 37,
+      minDeliveryTime: 37,
+      maxDeliveryTime: 37,
+      slaString: "37 MINS",
+      lastMileTravel: 7.400000095367432,
+      slugs: {
+        restaurant: "chai-point-sector-1vaishali-kaushambi",
+        city: "noida",
+      },
+      cityState: "24",
+      address:
+        "Gate Note 2 Max Hospital , W-3, near Radisson Blue Hotel, Sector-1,Vaishali, Ghaziabad, Uttar Pradesh 201012",
+      locality: "Sector 1",
+      parentId: 1607,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 8600,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 8600,
+        message: "",
+        title: "Delivery Charge",
+        amount: "8600",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "cid=6802246~p=4~eid=00000188-72ef-3ceb-0364-dbc700b8042f",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "7.4 kms",
+      hasSurge: false,
+      aggregatedDiscountInfoV3: {
+        header: "25% OFF",
+        subHeader: "UPTO ₹125",
+        discountTag: "",
+        headerTypeV2: 0,
+      },
+      sla: {
+        restaurantId: "279898",
+        deliveryTime: 37,
+        minDeliveryTime: 37,
+        maxDeliveryTime: 37,
+        lastMileTravel: 7.400000095367432,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "4.1",
+      totalRatings: 1000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "64268",
+      name: "QWICK GRAB KATHI ROLLS and MORE",
+      uuid: "2122b6eb-c291-4c3f-95d8-983b9940926f",
+      city: "4",
+      area: "Chander Nagar",
+      totalRatingsString: "1000+ ratings",
+      cloudinaryImageId: "l4er63qlpsoaxseewgsr",
+      cuisines: ["Fast Food"],
+      tags: [],
+      costForTwo: 30000,
+      costForTwoString: "₹300 FOR TWO",
+      deliveryTime: 24,
+      minDeliveryTime: 24,
+      maxDeliveryTime: 24,
+      slaString: "24 MINS",
+      lastMileTravel: 0.5,
+      slugs: {
+        restaurant: "qwick-grab-kathi-rolls-and-more-delhi-laxmi-nagar",
+        city: "delhi",
+      },
+      cityState: "4",
+      address:
+        "SHOP NO 1, 2ND SATNAM PARK CHANDAN NAGAR,OPPOSITE GULATI SWEETS, KRISHNA NAGAR",
+      locality: "Satnam Park",
+      parentId: 163590,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "distance",
+            fee: 3800,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 3800,
+        message: "",
+        title: "Delivery Charge",
+        amount: "3800",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "0.5 kms",
+      hasSurge: false,
+      aggregatedDiscountInfoV3: {
+        header: "20% OFF",
+        subHeader: "UPTO ₹50",
+        discountTag: "",
+        headerTypeV2: 0,
+      },
+      sla: {
+        restaurantId: "64268",
+        deliveryTime: 24,
+        minDeliveryTime: 24,
+        maxDeliveryTime: 24,
+        lastMileTravel: 0.5,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "4.1",
+      totalRatings: 1000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "114269",
+      name: "The Ruby Dhaba",
+      uuid: "028158c0-3a2a-4ec0-aca2-146af15de9b9",
+      city: "4",
+      area: "Geeta Colony",
+      totalRatingsString: "1000+ ratings",
+      cloudinaryImageId: "s3mpkoqnt88sucnfvvhh",
+      cuisines: ["North Indian"],
+      tags: [],
+      costForTwo: 40000,
+      costForTwoString: "₹400 FOR TWO",
+      deliveryTime: 24,
+      minDeliveryTime: 24,
+      maxDeliveryTime: 24,
+      slaString: "24 MINS",
+      lastMileTravel: 1.100000023841858,
+      slugs: {
+        restaurant: "the-ruby-dhaba-krishna-nagar-vam",
+        city: "delhi",
+      },
+      cityState: "4",
+      address: "106/67B/2 patpar ganj road Khureji khas Delhi 110051",
+      locality: "Patpar Ganj Road",
+      parentId: 213445,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "distance",
+            fee: 3800,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 3800,
+        message: "",
+        title: "Delivery Charge",
+        amount: "3800",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "1.1 kms",
+      hasSurge: false,
+      aggregatedDiscountInfoV3: {
+        header: "20% OFF",
+        subHeader: "UPTO ₹50",
+        discountTag: "",
+        headerTypeV2: 0,
+      },
+      sla: {
+        restaurantId: "114269",
+        deliveryTime: 24,
+        minDeliveryTime: 24,
+        maxDeliveryTime: 24,
+        lastMileTravel: 1.100000023841858,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "3.4",
+      totalRatings: 1000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "327046",
+      name: "The China Door",
+      uuid: "77b71656-e683-4e2d-99f4-0b2c0481b3a8",
+      city: "4",
+      area: "Karkardooma Community Center",
+      totalRatingsString: "1000+ ratings",
+      cloudinaryImageId: "tzy0o3u92lkdzitpi0wl",
+      cuisines: ["Chinese", "Thai", "Pan-Asian"],
+      tags: [],
+      costForTwo: 30000,
+      costForTwoString: "₹300 FOR TWO",
+      deliveryTime: 25,
+      minDeliveryTime: 25,
+      maxDeliveryTime: 25,
+      slaString: "25 MINS",
+      lastMileTravel: 2.5999999046325684,
+      slugs: {
+        restaurant: "the-china-door-dilshad-gardens-dilshad-gardens",
+        city: "delhi",
+      },
+      cityState: "4",
+      address:
+        "G-4 PLOT NO.13 PARMESH TOWER KARKARDOOMA COMMUNITY CENTRE DELHI",
+      locality: "Karkardooma",
+      parentId: 11573,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "distance",
+            fee: 3800,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 3800,
+        message: "",
+        title: "Delivery Charge",
+        amount: "3800",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "cid=6656438~p=7~eid=00000188-72ef-3ceb-0364-dbc800b80775",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "2.5 kms",
+      hasSurge: false,
+      aggregatedDiscountInfoV3: {
+        header: "50% OFF",
+        subHeader: "UPTO ₹100",
+        discountTag: "",
+        headerTypeV2: 0,
+      },
+      sla: {
+        restaurantId: "327046",
+        deliveryTime: 25,
+        minDeliveryTime: 25,
+        maxDeliveryTime: 25,
+        lastMileTravel: 2.5999999046325684,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "4.0",
+      totalRatings: 1000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "397778",
+      name: "Pizza Hut",
+      uuid: "b8310406-5fb2-4203-afcf-dec1a3915527",
+      city: "4",
+      area: "Krishna Nagar",
+      totalRatingsString: "1000+ ratings",
+      cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
+      cuisines: ["Pizzas"],
+      tags: [],
+      costForTwo: 35000,
+      costForTwoString: "₹350 FOR TWO",
+      deliveryTime: 25,
+      minDeliveryTime: 25,
+      maxDeliveryTime: 25,
+      slaString: "25 MINS",
+      lastMileTravel: 0.8999999761581421,
+      slugs: {
+        restaurant: "pizza-hut-geeta-colony-laxmi-nagar",
+        city: "delhi",
+      },
+      cityState: "4",
+      address:
+        "PIZZA HUT at A- 30, Krishna Nagar Extension, Khasra No- 664, situated at Abadi Krishna Nagar Extension, Village-Ghoundli Illaqa Shahdara, Delhi,  East , Delhi-110051",
+      locality: "Shahdara",
+      parentId: 721,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 3800,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 3800,
+        message: "",
+        title: "Delivery Charge",
+        amount: "3800",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "0.8 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "397778",
+        deliveryTime: 25,
+        minDeliveryTime: 25,
+        maxDeliveryTime: 25,
+        lastMileTravel: 0.8999999761581421,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "3.5",
+      totalRatings: 1000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "159118",
+      name: "Sultan Dhabha",
+      uuid: "f171ff43-3d81-4156-bcfa-53f6e8da9d9b",
+      city: "4",
+      area: "Geeta Colony",
+      totalRatingsString: "1000+ ratings",
+      cloudinaryImageId: "spokpghesjdzkxpmgvvm",
+      cuisines: ["Indian"],
+      tags: [],
+      costForTwo: 20000,
+      costForTwoString: "₹200 FOR TWO",
+      deliveryTime: 16,
+      minDeliveryTime: 16,
+      maxDeliveryTime: 16,
+      slaString: "16 MINS",
+      lastMileTravel: 0.8999999761581421,
+      slugs: {
+        restaurant: "sultan-dhabha-laxmi-nagar",
+        city: "delhi",
+      },
+      cityState: "4",
+      address:
+        "G 576,G F,ARAM PARK KHUREJI KHAS,DELHI, District   East , STATE  Delhi 110051",
+      locality: "Khureji Khas",
+      parentId: 15288,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "distance",
+            fee: 3800,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 3800,
+        message: "",
+        title: "Delivery Charge",
+        amount: "3800",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "0.8 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "159118",
+        deliveryTime: 16,
+        minDeliveryTime: 16,
+        maxDeliveryTime: 16,
+        lastMileTravel: 0.8999999761581421,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "3.8",
+      totalRatings: 1000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "253981",
+      name: "McDonald's",
+      uuid: "3a1c0171-e878-4ad8-9b7f-6e86ecd22c9e",
+      city: "4",
+      area: "Laxmi Nagar",
+      totalRatingsString: "10000+ ratings",
+      cloudinaryImageId: "1293a58ab5610f4c730c3d8cb6ac1b65",
+      cuisines: ["American"],
+      tags: [],
+      costForTwo: 40000,
+      costForTwoString: "₹400 FOR TWO",
+      deliveryTime: 25,
+      minDeliveryTime: 25,
+      maxDeliveryTime: 25,
+      slaString: "25 MINS",
+      lastMileTravel: 3,
+      slugs: {
+        restaurant: "mcdonalds-delhi-v3s-mall-laxmi-nagar",
+        city: "delhi",
+      },
+      cityState: "4",
+      address:
+        "Delhi V3S Mall, V3S East Center Mall, G. Floor, Shop No. 98 & 107. Plot No. 12,  District Center, Laxmi Nagar, Delhi- 110092",
+      locality: "V3S Mall",
+      parentId: 630,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 4600,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 4600,
+        message: "",
+        title: "Delivery Charge",
+        amount: "4600",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "3 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "253981",
+        deliveryTime: 25,
+        minDeliveryTime: 25,
+        maxDeliveryTime: 25,
+        lastMileTravel: 3,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "4.2",
+      totalRatings: 10000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+];
+
+const RestaurantCard = ({name, cloudinaryImageId, cuisines, costForTwo, deliveryTime, avgRating}) => {
+  return (
+    <div className="res-card">
+      <img
+        className = "res-image"
+        src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+
+        cloudinaryImageId}
+      />
+      <h2>{name}</h2>
+      <h3>📃 {cuisines.join(", ")}</h3>
+      <h4>⭐ {avgRating} stars</h4>
+      <h4>🚚 {deliveryTime} MINS</h4>
+      <h4>💸 ₹{costForTwo / 100} FOR TWO</h4>
+    </div>
+  );
+};
+
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="res-container">
+        {
+          restaurantsList.map((restaurant) => {
+              return <RestaurantCard {...restaurant.data} key={restaurant.data.id} />;
+          })
+        }
+      </div>
+    </div>
+  );
+};
+
+const Footer = () => {
+  return (
+    <div className="footer">
+      <div>This is Footer.</div>
+    </div>
+  );
+};
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+      <Footer />
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout />);

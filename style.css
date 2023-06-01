@@ -1,3 +1,47 @@
-div > h1 {
-    color: red;
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 2px double red;
+}
+
+.nav-items > ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+} 
+
+.nav-items > ul > li {
+    padding: 10px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.search {
+    padding: 10px;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-card {
+    background-color: #D3D3D3;
+    border: 1px solid gray;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.res-card:hover {
+    background-color: white;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.res-card > img {
+    width: 100%;
 }
