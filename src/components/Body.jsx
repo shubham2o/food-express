@@ -1,10 +1,11 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
-  useEffect(()=> {fetchData()}, []);
+  useEffect(() => {fetchData()}, []);
 
   const fetchData = async () => {
     const data = await fetch(
@@ -16,7 +17,8 @@ const Body = () => {
     setListOfRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   }
 
-  return (
+  return listOfRestaurants.length === 0 ? <Shimmer /> : 
+  (
     <div className="body">
       <div className="filter">
         <button className="filter-btn" 
@@ -27,6 +29,7 @@ const Body = () => {
         > Top Rated Restaurants 
         </button>
       </div>
+
       <div className="res-container">
         { listOfRestaurants.map((restaurant) => {
               return <RestaurantCard {...restaurant.data} key={restaurant.data.id} />;
