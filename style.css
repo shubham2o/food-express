@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  border: 2px double red;
+  border: 1px double red;
 }
 
 .nav-items > ul {
@@ -24,6 +24,10 @@
   cursor: pointer;
 }
 
+.filter {
+  display: flex;
+}
+
 .filter-btn {
   margin: 10px;
   cursor: pointer;
@@ -35,14 +39,14 @@
 }
 
 .res-card {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   width: 200px;
   padding: 25px;
   margin: 10px;
 }
 
 .res-card:hover {
-  border: 0.1px solid #DFDFDE;
+  border: 0.1px solid #dfdfde;
   cursor: pointer;
 }
 
@@ -56,9 +60,9 @@
 }
 
 .shimmer-card {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   width: 200px;
   height: 400px;
   padding: 25px;
-  margin: 10px;
+  margin: 20px;
 }
